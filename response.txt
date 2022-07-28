@@ -1,0 +1,98 @@
+{
+    "responseId": "7b6555ca-c528-4efe-a1bb-599347ec9a7d-aebbc26f",
+    "queryResult": {
+        "queryText": "senha1",
+        "action": "Introduo.Introduo-no",
+        "parameters": {
+            "nome": {
+                "name": "josue"
+            },
+            "idade": 20,
+            "email": "josueavx@gmail.com",
+            "senha": "senha1"
+        },
+        "allRequiredParamsPresent": "True",
+        "fulfillmentText": "cadastro",
+        "fulfillmentMessages": [
+            {
+                "text": {
+                    "text": [
+                        "cadastro"
+                    ]
+                }
+            }
+        ],
+        "outputContexts": [
+            {
+                "name": "projects/testinho-yoke/agent/sessions/31ac21cc-7e7c-1557-cf1e-157789db166e/contexts/introduo-no-followup",
+                "lifespanCount": 2,
+                "parameters": {
+                    "nome": {
+                        "name": "josue"
+                    },
+                    "nome.original": "josue",
+                    "idade": 20,
+                    "idade.original": "20",
+                    "email": "josueavx@gmail.com",
+                    "email.original": "josueavx@gmail.com",
+                    "senha": "senha1",
+                    "senha.original": "senha1",
+                    "geo-state": "",
+                    "geo-state.original": ""
+                }
+            },
+            {
+                "name": "projects/testinho-yoke/agent/sessions/31ac21cc-7e7c-1557-cf1e-157789db166e/contexts/__system_counters__",
+                "parameters": {
+                    "no-input": 0,
+                    "no-match": 0,
+                    "nome": {
+                        "name": "josue"
+                    },
+                    "nome.original": "josue",
+                    "idade": 20,
+                    "idade.original": "20",
+                    "email": "josueavx@gmail.com",
+                    "email.original": "josueavx@gmail.com",
+                    "senha": "senha1",
+                    "senha.original": "senha1"
+                }
+            },
+            {
+                "name": "projects/testinho-yoke/agent/sessions/31ac21cc-7e7c-1557-cf1e-157789db166e/contexts/introduo-followup",
+                "lifespanCount": 1,
+                "parameters": {
+                    "geo-state": "",
+                    "geo-state.original": "",
+                    "email": "josueavx@gmail.com",
+                    "email.original": "josueavx@gmail.com",
+                    "senha": "senha1",
+                    "senha.original": "senha1",
+                    "nome": {
+                        "name": "josue"
+                    },
+                    "nome.original": "josue",
+                    "idade": 20,
+                    "idade.original": "20"
+                }
+            }
+        ],
+        "intent": {
+            "name": "projects/testinho-yoke/agent/intents/d625b652-51c2-485b-9522-cdf01488bfde",
+            "displayName": "Introdução - no"
+        },
+        "intentDetectionConfidence": 0.3,
+        "languageCode": "pt-br",
+        "sentimentAnalysisResult": {
+            "queryTextSentiment": {
+                "score": 0.3,
+                "magnitude": 0.3
+            }
+        }
+    },
+    "originalDetectIntentRequest": {
+        "source": "DIALOGFLOW_CONSOLE",
+        "payload": {}
+    },
+    "session": "projects/testinho-yoke/agent/sessions/31ac21cc-7e7c-1557-cf1e-157789db166e"
+}

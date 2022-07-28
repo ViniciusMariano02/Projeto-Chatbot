@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Um bot que irá te auxiliar com marcações.">
+  <title>Projeto Chatbot</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='LandingPage/style.css') }}">
+</head>
+
+<body>
+  <header class="cabecalho">
+    <img class="cabecalho-imagem" src="{{ url_for('static', filename='LandingPage/logo.png') }}" alt="">
+    <nav class="cabecalho-menu">
+      <a class="cabecalho-menu-item" href="https://hc.tisaude.com">Site oficial</a>
+      <a class="cabecalho-menu-item">Áreas</a>
+      <a class="cabecalho-menu-item">Marque sua consulta</a>
+    </nav>
+  </header>
+
+  <main class="conteudo">
+    <section class="conteudo-principal">
+      <div class="conteudo-principal-escrito">
+        <h1 class="conteudo-principal-escrito-titulo">Bem Vindo</h1>
+        <h2 class="conteudo-principal-escrito-subtitulo">Marque sua consulta com nosso Chatbot e veja a praticidade de nosso atendimento.</h2>
+        <button class="conteudo-principal-escrito-botao" onclick="window.location.href = 'http://localhost:5000/login'">Chatbot</button>
+      </div>
+      <img class="conteudo-principal-imagem"src="{{ url_for('static', filename='LandingPage/content.png') }}" alt="">
+    </section>
+
+    <section class="conteudo-secundario">
+      <h3 class="conteudo-secundario-titulo">Temos profissionais nas áreas de:</h3>
+      <p class="conteudo-secundario-paragrafo"><strong>Psiquiatria</strong> Dra. Debora Farias Batista Leite</p>
+      <p class="conteudo-secundario-paragrafo"><strong>Psicologia</strong> Dr. Carlos Alfandega Silva</p>
+      <p class="conteudo-secundario-paragrafo"><strong>Psicologia</strong> Dra. Ana Caroline Cavalcanti Dela Bianca</p>
+      
+    </section>
+
+    <section class="conteudo-secundario">
+      <h3 class="conteudo-secundario-titulo">Você pode solicitar esses serviços:</h3>
+      <p class="conteudo-secundario-paragrafo">1. Marcar Consulta </p>
+      <p class="conteudo-secundario-paragrafo">2. Visualizar consultas marcadas</p>
+      <p class="conteudo-secundario-paragrafo">3. Cancelar consultas marcadas</p>
+      
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <img class="rodape-imagem" src="{{ url_for('static', filename='LandingPage/nutes.png') }}">
+  </footer>
+</body>
+
+</html>

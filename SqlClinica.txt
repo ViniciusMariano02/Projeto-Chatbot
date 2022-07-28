@@ -1,0 +1,45 @@
+CREATE TABLE Medico ( 
+id_do_medico INT(10) PRIMARY KEY AUTO_INCREMENT, 
+nome_medico varchar(30) NOT NULL, 
+lugar varchar(40) NOT NULL, 
+especialidade varchar(20) NOT NULL);
+
+CREATE TABLE Paciente ( 
+id_do_paciente INT(10) PRIMARY KEY AUTO_INCREMENT, 
+nome_paciente varchar(60),
+senha_paciente varchar(8),
+idade int(3),
+email varchar(20));
+
+CREATE TABLE Consultas(
+ID INT(10) PRIMARY KEY,
+id_paciente INT(10),
+id_medico INT(10),
+data_consult varchar(10),
+horario varchar(5),
+lugar_medico varchar(40) NOT NULL,
+FOREIGN KEY (id_paciente) REFERENCES Paciente (id_do_paciente),
+FOREIGN KEY (id_medico) REFERENCES Médico (id_do_medico),
+FOREIGN KEY (lugar_medico) REFERENCES Médico (lugar));
+
+CREATE TABLE consultasDisponiveis (
+ID INT(10) PRIMARY KEY AUTO_INCREMENT,
+id_medico INT(10),
+data_consult varchar(10),
+horario varchar(5),
+lugar_medico varchar(40)
+FOREIGN KEY (id_medico) REFERENCES Médico (id_do_medico),
+FOREIGN KEY (lugar_medico) REFERENCES Médico (lugar));
+
+
+INSERT INTO Pacientes VALUES (DEFAULT, 'Nome', 'senha', 'idade', 'email')
+INSERT INTO Medico VALUES (DEFAULT, 'Nome', 'endereco', 'especialidade')
+INSERT INTO Consultas VALUES (ID, ID_PACIENTE, iD_MEDICO, DATA_CONSULTA, HORARIO, LUGAR_MEDICO)
+INSERT INTO consultasDisponiveis VALUES (DEFAULT, ID_MEDICO, 'data_consult', 'horario', 'lugar_medico')
+
+
+INSERT INTO consultasDisponiveis VALUES (DEFAULT, 3, '23/07/2022', '15:45', 'Avenida Agamenon Magalhaes, 30')
+
+
+
+1, 1, '2022-07-15', '15:45:00', 'rua 1'
